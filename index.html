@@ -13,7 +13,7 @@
 		table {
 		    font-family: arial, sans-serif;
 		    border-collapse: collapse;
-		    width: 75%;
+		    width: 50%;
 		    margin: 0 auto;
 		}
 
@@ -24,6 +24,15 @@
 
 		tr:nth-child(even) .code {
 		    background-color: #f8f8f8;
+		}
+
+		ol {
+			padding: 5px 15px;
+			margin: 0;
+		}
+
+		li {
+			padding: 2px;
 		}
 
 		/* Style the header */
@@ -99,6 +108,15 @@
 		.html-tag {
 			color: red;
 		}
+
+		.html-comment {
+			color: gray;
+		}
+
+		.inline-code {
+			background: #f8f8f8;
+		}
+
 	</style>
 </head>
 <body>
@@ -123,6 +141,124 @@
 			</div>
 			<!-- END OF side column -->
 			<div class="column middle">
+				<!--              -->
+				<!--  HTML NOTES  -->
+				<!--              -->
+
+				<!-- Introduction -->
+				<h3>Introduction</h3>
+				<p>HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of the content to make it appear a certain way.</p>
+
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+				    		<code>
+				    			&lt;<span class="html-tag">opening-tag</span>&gt; Content &lt;/<span class="html-tag">closing-tag</span>&gt;
+				    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+				<ol>
+					<li>The opening tag consists of the name of the element wrapped in opening and closing angle brackets</li>
+					<li>The closing tag is the same as the opening tag except that it includes a forward slash before the element name. This states where the element ends.</li>
+					<li>The content of the element. In this case its simply text.</li>
+					<li>The element consists of the opening tag plus the closing tag as well as the content</li>
+				</ol>
+
+				<p>Comments are important to document code and even provide some organization as well.</p>
+
+				<h3>Anatomy of an HTML Document</h3>
+				<p><span class="inline-code">&lt;!DOCTYPE html&gt;</span> is the document type. These are mean to act as links to a set of rules that the HTML page had to follow in order to be considered good HTML</p>
+
+				<p>Opening and closing HTML tags wrap all the content on the entire page and is known as the <strong>root element</strong>.</p>
+				<p>Opening and closing HEAD tags acts as a container for all the stuff you want to include on the HTML page that isn't the content you are displaying. This includes things like keywords and a page description that you want to appear in search results, CSS to style the content, character set declarations, and more.</p>
+				<p>Opening and closing body tags contains all the content you want to show to web users when they visit your page.</p>
+				<p><span class="inline-code">&lt;meta charset="utf-8"&gt;</span> sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages.</p>
+				<p>The opening and closing title element sets the title of your page.</p>
+
+				<p>
+					<strong>Note: </strong> To use special characters such as <span class="inline-code">&lt;</span> , <span class="inline-code">&gt;</span>
+					 view the page source of this note.
+				</p>
+
+				<!-- Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+				    		<code>
+				    			<span class="html-comment">&lt;!-- This is a comment --&gt;</span>
+				    		</code>
+				    </td>
+				   </tr>
+				   <tr>
+				    	<td>
+				    		<code>
+				    			<span class="html-comment">&lt;!-- This comment can extend to </span>
+				    		</code>
+				    	</td>
+				   </tr>
+				   <tr>
+				    	<td>
+				    		<code>
+				    			<span class="html-comment">More than just one line --&gt;</span>
+				    		</code>
+				    	</td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<hr>
+
+				<h3>Example of Tags</h3>
+				<!-- maybe put a table in here? -->
+				<p>
+					<span class="inline-code">&lt;em&gt;</span> <em>italicizes</em> or <em>EMphasizes</em> whatever it surrounds.
+				</p>
+
+				<p>
+					<span class="inline-code">&lt;strong&gt;</span> <strong>bolds</strong> the text.
+				</p>
+
+				<hr>
+
+				<h3>Block Versus Inline Elements</h3>
+				<ul>
+					<li>Block-level elements for a visible block on a page. They will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent. Ex: paragraphs, lists, navigation menus, footers, etc.</li>
+					<li>Inline elements are those that are contained within block-level elements and surround only small parts of the document's content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document. They would normally appear inside a paragraph of text.</li>
+				</ul>
+
+				<hr>
+
+				<h3>Images</h3>
+				<table class="code">
+				  <tr>
+				    <td>
+				    	<code>
+				    		&lt;<span class="html-tag">img src</span>="images/firefox-icon.png" <span class="html-tag">alt</span>="Test Image"&gt;
+				    	</code>
+				    </td>
+				  </tr> <!-- END OF line -->
+				</table>
+
+				<p><span class="inline-code">src</span> is an attribute that directs where the image is located.</p>
+				<p><span class="inline-code">alt</span> is another attribute you specify descrpitive text for users who can't see the image</p>
+				<p><strong>Note:</strong> The <span class="inline-code">&lt;img&lt;</span> is a self-closing tag; meaning it does NOT need a closing tag.</p>
+
+				<hr>
+
+				<!-- Headings -->
+				<h3>Headings</h3>
+				<p><span class="inline-code">&lt;h1&gt;H1 Main Title&lt;/h1&gt;</span><h1>H1 Main Title</h1></p>
+				<p><span class="inline-code">&lt;h2&gt;Top Level Heading&lt;/h2&gt;</span><h2>H2 Top Level Heading</h2></p>
+				<p><span class="inline-code">&lt;h3&gt;Sub-heading&lt;/h3&gt;</span><h3>Sub-heading</h3></p>
+				<p><span class="inline-code">&lt;h4&gt;Sub sub-heading&lt;/h4&gt;</span><h4>Su sub-heading</h4></p>
+				<!-- END OF headings -->
+				
+				<hr>
+
+
 				<!-- 	Code Example -->
 				<table class="code">
 				  <tr>
@@ -157,6 +293,13 @@
 				    </td>
 				  </tr> <!-- END OF line -->
 				</table>
+				<!-- END OF code example -->
+
+				<!--              -->
+				<!--    END OF    -->
+				<!--  HTML NOTES  -->
+				<!--              -->
+
 			</div>
 			<!-- END OF middle column -->
 			<div class="column side">
