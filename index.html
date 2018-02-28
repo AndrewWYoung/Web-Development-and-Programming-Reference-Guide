@@ -105,6 +105,10 @@
 			padding-left: 25px;
 		}
 
+		.inner-inner-code {
+			padding-left: 50px;
+		}
+
 		.html-tag {
 			color: red;
 		}
@@ -133,6 +137,7 @@
 	  <a href="#">Java</a>
 	  <a href="#">GitHub</a>
 	</div>
+
 	<div class="main-container">
 		<div class="row">
 			<div class="column side">
@@ -258,6 +263,20 @@
 				
 				<hr>
 
+				<!-- Lists -->
+				<h3>Lists</h3>
+				<p>The most cocmmon list types are ordered and unordered lists.</p>
+				<p><strong>Note:</strong> <em>li</em> stands for "list item".</p>
+				<ol>
+					<li>
+						<strong>Unordered Lists</strong> are for lists where the order of the items doesn't matter, like a shopping list. These are children of the <span class="inline-code">&lt;ul&gt;</span> HTML tag.
+					</li>
+					<li>
+						<strong>Ordered Lists</strong> are for lists where the order of the items does matter, like a recipe. These are children of the <span class="inline-code">&lt;ol&lt; HTML tag.
+					</li>
+					<li>
+						<strong>Note:</strong> This is an example of an ordered list. Below is an example of the code for an unordered list.
+					</li>
 
 				<!-- 	Code Example -->
 				<table class="code">
@@ -295,6 +314,81 @@
 				</table>
 				<!-- END OF code example -->
 
+				<hr>
+
+				<h3>Links</h3>
+				<p>To add a link, use the element <span class="inline-code">&lt;a&gt;. The "a" being short for "anchor".</p>
+
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+				    	<code>
+				    		&lt;<span class="html-tag">a href</span>="https://www.google.com/"&gt;Google&lt;/<span class="html-tag">a</span>&gt;
+				    	</code>
+				    </td>
+				  </tr> <!-- END OF line -->
+				</table>
+				<!-- END OF code example -->
+
+				<hr>
+
+				<h3>Divs and Spans</h3>
+				<p>Both are not quite useful UNTIL you begin styling elements with CSS. They allow you to group content together. They are simply containers.</p>
+				<p>The difference between DIV and a SPAN is that a DIV is a block-level element which means it takes up its own line. A SPAN is an inline-element.</p>
+
+				<hr>
+
+				<h3>HTML Attributes</h3>
+				<p>Attributes are a way to add additional information to our HTML elements. They take the form of a key value pair which means a property followed by a corresponding value.</p>
+
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+				    	<code>
+				    		&lt;<span class="html-tag">tag-name</span>="value"&gt;&lt;/<span class="html-tag">closing-tag</span>&gt;
+				    	</code>
+				    </td>
+				  </tr> <!-- END OF line -->
+				</table>
+				<!-- END OF code example -->
+
+				<p><strong>Google:</strong> MDN HTML attributes for more information.</p>
+
+				<hr>
+
+				<h3>Tables</h3>
+				<p>Create a table by using opening and closing <span class="inline-code">&lt;table&gt; tags.</p>
+				<p>Create a header by using opening and closing <span class="inline-code">&lt;thead&gt; tags.</p>
+				<p>Create rows by using opening and closing <span class="inline-code">&lt;tr&gt; tags.</p>
+				<p>To insert table data, use opening and closing <span class="inline-code">&lt;td&gt; tags.</p>
+
+			<table>
+			  <thead>
+			    <tr>
+			      <th>Month</th>
+			      <th>Savings</th>
+			    </tr>
+			  </thead>
+			  <tfoot>
+			    <tr>
+			      <td>Sum</td>
+			      <td>$180</td>
+			    </tr>
+			  </tfoot>
+			  <tbody>
+			    <tr>
+			      <td>January</td>
+			      <td>$100</td>
+			    </tr>
+			    <tr>
+			      <td>February</td>
+			      <td>$80</td>
+			    </tr>
+			  </tbody>
+			</table>
+
 				<!--              -->
 				<!--    END OF    -->
 				<!--  HTML NOTES  -->
@@ -306,6 +400,7 @@
 				<h2>Side</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
 			</div>
+
 		</div>
 	</div>
 </body>
