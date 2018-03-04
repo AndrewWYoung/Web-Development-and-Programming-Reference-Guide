@@ -1,150 +1,154 @@
 * {
-	 		box-sizing: border-box;
-	 	}
-		body {
-			margin: 0;
-			padding: 0;
-			letter-spacing: 1.5px;
-		}
-		table {
-		    font-family: arial, sans-serif;
-		    border-collapse: collapse;
-		    width: 75%;
-		    margin: 0 auto;
-		}
+		box-sizing: border-box;
+	}
+body {
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1.5px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin: 0 auto;
+}
 
-		td, th {
-		    text-align: left;
-		    padding: 5px;
-		}
+td, th {
+    text-align: left;
+    padding: 5px;
+}
 
-		tr:nth-child(even) .code {
-		    background-color: #f8f8f8;
-		}
+tr:nth-child(even) .code {
+    background-color: #f8f8f8;
+}
 
-		ol {
-			padding: 5px 15px;
-			margin: 0;
-		}
+ol {
+	padding: 5px 15px;
+	margin: 0;
+}
 
-		li {
-			padding: 2px;
-		}
+li {
+	padding: 2px;
+	list-style-type: none;
+}
 
-		a {
-			text-decoration: none;
-		}
+a {
+	text-decoration: none;
+}
 
-		a:hover {
-			font-size: 1.2em;
-		}
+a:hover {
+	font-size: 1.2em;
+}
 
-		a:link{
-			color: green;
-		}
+a:link{
+	color: green;
+}
 
-		a:visited {
-			color: pink;
-		}
+a:visited {
+	color: pink;
+}
 
-		form {
-			margin: 15px 20%;
-		}
+form {
+	margin: 15px 20%;
+}
 
-		input {
-			margin: 10px;
-		}
+input {
+	margin: 10px;
+}
 
-		/* Style the header */
-		.header {
-		    background-color: #f1f1f1;
-		    padding: 20px;
-		    text-align: center;
-		}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
 
-		/* Style the top navigation bar */
-		.topnav {
-		    overflow: hidden;
-		    background-color: #333;
-		}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
 
-		/* Style the topnav links */
-		.topnav a {
-		    float: left;
-		    color: #f2f2f2;
-		    text-align: center;
-		    padding: 14px 16px;
-		    text-decoration: none;
-		}
+/* Style the topnav links */
+.topnav a {
+	float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-		/* Change color on hover */
-		.topnav a:hover {
-		    background-color: #ddd;
-		    color: black;
-		}
+.topnav ol li {
+	text-align: center;
+}
 
-		/* Create three unequal columns that floats next to each other */
-		.column {
-		    float: left;
-		    padding: 10px;
-		}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
-		/* Left and right column */
-		.column.side {
-		    width: 15%;
-		}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
 
-		/* Middle column */
-		.column.middle {
-		    width: 70%;
-		}
+/* Left and right column */
+.column.side {
+    width: 15%;
+}
 
-		/* Clear floats after the columns */
-		.row:after {
-		    content: "";
-		    display: table;
-		    clear: both;
-		}
+/* Middle column */
+.column.middle {
+    width: 70%;
+}
 
-		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-		@media (max-width: 600px) {
-		    .column.side, .column.middle {
-		        width: 100%;
-		    }
-		}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-		.main-container {
-			margin: 25px 50px;
-		}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
 
-		.code {
-			border-left: 4px solid steelblue;
-		}
+.main-container {
+	margin: 25px 50px;
+}
 
-		.single-tab {
-			padding-left: 25px;
-		}
+.code {
+	border-left: 4px solid steelblue;
+}
 
-		.double-tab {
-			padding-left: 50px;
-		}
+.single-tab {
+	padding-left: 25px;
+}
 
-		.triple-tab {
-			padding-left: 75px;
-		}
+.double-tab {
+	padding-left: 50px;
+}
 
-		.quad-tab {
-			padding-left: 100px;
-		}
+.triple-tab {
+	padding-left: 75px;
+}
 
-		.html-tag {
-			color: red;
-		}
+.quad-tab {
+	padding-left: 100px;
+}
 
-		.html-comment {
-			color: gray;
-		}
+.html-tag {
+	color: red;
+}
 
-		.inline-code {
-			background: #f8f8f8;
-		}
+.html-comment {
+	color: gray;
+}
+
+.inline-code {
+	background: #f8f8f8;
+}

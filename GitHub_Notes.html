@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/reference.css">
+</head>
+<body>
+
+	<div class="header">
+	  <h1>Web Development / Programming Reference Guide</h1>
+	</div>
+
+	<div class="topnav">
+	  	<a href="HTML_Notes.html">HTML</a>
+		<a href="#">CSS</a>
+		<a href="#">JavaScript</a>
+		<a href="#">Python 3</a>
+		<a href="#">Java</a>
+		<a href="#">GitHub</a>
+	</div>
+
+	<div class="main-container">
+		<div class="row">
+			<div class="column side">
+				<h2>Side</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+			</div>
+			<!-- END OF side column -->
+			<div class="column middle">
+				<h3>GitHub and Command Line</h3>
+				<p>GitHub is an interface to GIT which keeps track of the entire history of the projects you're working on. It is also a great tool for collaboration.</p>
+
+				<h3>Command Line Basics</h3>
+				<p><span class="inline-code">cd &lt;file directory&gt;</span></p>
+				<p>Change directory into the given folder. In the following example you will move into the "assets" folder.</p>
+
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>cd</strong> assets
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><span class="inline-code">cd ..</span> will take you back one "level".</p>
+				<p><strong>Note:</strong> Tab completion is done by typing the folder name followed by hitting the tab button.</p>
+				
+				<p><span class="inline-code">dir &lt;file directory&gt;</span></p>
+				<p>Will list the entire contents of the given directory</p>
+
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>dir</strong> assets
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><strong>Note:</strong> You can access a folders content without leaving your current directory.</p>
+
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>dir</strong> assets/css/
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><span class="inline-code">mkdir</span> will create a directory.</p>
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>mkdir</strong> assets/experimental_code
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+				<p><strong>Note:</strong> The above code will create a new folder titled "experimental_code" within "assets" folder.</p>
+
+
+				<p><span class="inline-code">rm -rf</span> will delete a given folder. The "-rf" flag is known as "recursive force" which will delete the file and its entire contents without hassle. The following code will delete the folder titled "experimental_code" and all of its contents.</p>
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>rm -rf</strong> assets/experimental_code
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+
+				<h3>GitHub Commands</h3>
+
+				<p><span class="inline-code">git clone &lt;url&gt;</span> clones a repository from the given url.</p>
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git clone</strong> https://www.github.com/andrew_young/project.git
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><span class="inline-code">git status</span> displays the difference between whats on the local machine, and what's on GitHub.</p>
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git status</strong>
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><span class="inline-code">git add</span> AND <span class="inline-code">git add -A </span>adds a file to the staging area. The -A flag means it will add ALL files that are curretly not in the staging area.</p>
+				<!-- 	Code Example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git add</strong> "about_me.html"
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+				<p> OR </p>
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git add -A</strong>
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><span class="inline-code">git commit -m </span> locks the project into the repository BUT is still on your machine. It's <strong>not</strong> synced up with GitHub, yet. The -m flag stands for message.</p>
+				<!-- END OF code example -->
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git commit -m</strong> "added new CSS file
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+				<!-- END OF code example -->
+
+				<p><strong>Note: </strong> If you commit without a message you'll get a weird screen. Simply hit 'esc' followed by ":wq" (without the quotes).</p>
+
+				<p><span class="inline-code">git push</span> pushes the committed changes up to GitHub.</p>
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git push</strong>
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+
+				<p><span class="inline-code">git pull</span> pulls the project down from GitHub</p>
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			<strong>git pull</strong>
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+
+				<p><strong>Note: </strong> git push and pull will only work in the directory of your repository.</p>
+
+				<h3>Git Ignore File</h3>
+				<p>A document of listed files and folders to be ignored by git.</p>
+				<p><span class="inline-code">#</span> are single line comments.</p>
+				<p>Create a .gitignore file within your project and add the files you want git to ignore.</p>
+
+				<table class="code">
+				  <tr>
+				    <td>
+			    		<code>
+			    			*.text
+			    		</code>
+				    </td>
+				   </tr>
+				   <tr>
+				    <td>
+			    		<code>
+			    			NameOfFolder/
+			    		</code>
+				    </td>
+				   </tr>
+				</table>
+
+				<p>You can add any file, or directory. The forward slash informs git that it is a directory.</p>
+
+				<h3>Typical Day</h3>
+				<ol>
+					<li>git pull</li>
+					<li>Make changes and update your files</li>
+					<li>git add -A</li>
+					<li>git commit -m "some message"</li>
+					<li>git push</li>
+				</ol>
+
+				<p><strong>Every few hours throughout the day, make sure you're in sync and pull</strong></p>
+
+
+
+			</div>
+			<!-- END OF middle column -->
+			<div class="column side">
+				<h2>Helpful Links</h2>
+				<p><a href="https://www.w3schools.com/howto/default.asp">W3 How To Everything</a></p>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
