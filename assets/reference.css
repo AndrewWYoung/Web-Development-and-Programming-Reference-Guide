@@ -56,6 +56,7 @@ input {
 	margin: 10px;
 }
 
+
 /* Style the header */
 .header {
     background-color: #f1f1f1;
@@ -151,4 +152,8 @@ input {
 
 .inline-code {
 	background: #f8f8f8;
+}
+
+.code-snippet {
+	border-left: 4px solid steelblue;
 }
