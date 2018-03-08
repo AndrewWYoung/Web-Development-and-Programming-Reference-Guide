@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/reference.css">
+</head>
+<body>
+
+	<div class="header">
+	  <h1>Web Development / Programming Reference Guide</h1>
+	</div>
+
+	<div class="topnav">
+	  	<a href="HTML_Notes.html">HTML</a>
+		<a href="#">CSS</a>
+		<a href="#">JavaScript</a>
+		<a href="#">Python 3</a>
+		<a href="#">Java</a>
+		<a href="GitHub_Notes.html">GitHub</a>
+		<a href="test.html">Test</a>
+	</div>
+
+	<div class="main-container">
+		<div class="row">
+			<div class="column side">
+				<h2>Side</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+			</div>
+			<!-- END OF side column -->
+			<div class="column middle">
+
+				<h3>CSS: Cascading Style Sheets</h3>
+				<p>Use CSS to decorate and adjust webpages to achieve a desired theme. It's used to describe how a website should look.</p>
+
+				<hr>
+
+				<h3>CSS General Rule</h3>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>selector {</p>
+					<p class="single-tab">property: value</p>
+					<p class="single-tab">property: value</p>
+					<p>}</p>
+				</div>
+
+				<p>Example</p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>h1 {</p>
+					<p class="single-tab">color: purple</p>
+					<p class="single-tab">font-size: 25px;</p>
+					<p>}</p>
+				</div>
+
+				<h3>Where do we write our styles?</h3>
+				<p><strong>Inline</strong></p>
+				<div class="code-snippet">
+					<p>&lt;h3 <strong>style</strong>="color: pink;"&gt;content content content&lt;/h3&gt;</p>
+				</div>
+
+				<p><strong>Style Tag</strong></p>
+				<p>Use opening and closing &lt;style&gt; tags within the &lt;head&gt; tags and add the CSS there.</p>
+				<p>Or...</p>
+
+				<p><strong>External CSS File</strong> (using the &lt;link&gt; tag.</p>
+				<div class="code-snippet">
+					<p>&lt;<strong>link</strong> rel="stylesheet" type="text/css" href="css_file_name.css"&gt;</p>
+				</div>
+
+				<p><strong>Note:</strong> The reason you separate your CSS file from your HTML is because you only have to write your CSS once if its in an external file. Simply add the above code snippet in between the &lt;head&gt; tags.</p>
+
+				<p><strong>Shortcut:</strong> In Sublime, type "link" (without the quotes) and hit tab to autocomplete the above code snippet.</p>
+
+				<h3>Colors</h3>
+				<p><strong>Hexadecimal</strong> is a number and a string of 6 hexadecimal numbers (from 0 - f).</p>
+				<p>Example:</p>
+				<p><span style="color: #000000;">#000000</span>, <span style="color: #4B0082;">#4B0082</span>, or <span style="color: #00ff00;">#00ff00</span></p>
+				<p>In hexidecimal, the first two places represents the value for red; the next two places corresponds to how much green; and the last two places represent how much blue.</p>
+
+				<p><strong>RGB</strong> works similiar to hexadecimal as it has three different channels for Red, Green, and Blue. Each channel ranges from 0-255.</p>
+
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>selector {</p>
+					<p class="single-tab">color: rgb(0, 255, 0);</p>
+					<p>}</p>
+				</div>
+
+				<p><strong>RGBA</strong> is similar to RBG, but has an additional alpha (transparency) channel which ranges from 0.0 to 1.0</p>
+
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>selector {</p>
+					<p class="single-tab">color: rgb(0, 255, 0, 0.6);</p>
+					<p>}</p>
+				</div>
+
+				<h3>Background and Border</h3>
+
+				<p><strong>Note:</strong> use 'color' to set text color, and 'background' for background color.</p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>body {</p>
+					<p class="single-tab">background: rgb(25, 255, 100);</p>
+					<p>}</p>
+				</div>
+
+				<p><strong>Using a background image</strong></p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>body {</p>
+					<p class="single-tab">background: url(insert_image_url_or_image_name_here);</p>
+					<p>}</p>
+				</div>
+
+				<p><strong>Background Tricks</strong></p>
+
+				<p>To avoid a repeating background image use:</p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>body {</p>
+					<p class="single-tab">background-repeat: no-repeat;</p>
+					<p>}</p>
+				</div>
+
+				<p>To get a smaller image to stretch across the entire screen, use:</p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>body {</p>
+					<p class="single-tab">background-size: cover;</p>
+					<p>}</p>
+				</div>
+
+				<h3>Border</h3>
+				<p>In CSS, a border has three separate parts: width, color, and style.</p>
+
+				<div class="code-snippet">
+					<p><strong>border-width</strong>: 5px";</p>
+				</div>
+
+				<div class="code-snippet">
+					<p><strong>border-color</strong>: purple";</p>
+				</div>
+
+				<div class="code-snippet">
+					<p><strong>border-style</strong>: solid";</p>
+				</div>
+
+				<p><strong>Note:</strong> You must have all three properties set. You can also combine these all into one.</p>
+
+				<div class="code-snippet">
+					<p><strong>border</strong>: 5px solid purple;</p>
+				</div>
+
+				<h3>More Selectors</h3>
+
+				<p><strong>* selector </strong></p>
+				<p>The * selector will select everything on the page.</p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>* {</p>
+					<p class="single-tab">padding: 0;</p>
+					<p>}</p>
+				</div>
+
+				<p><strong>Descendant Selector</strong></p>
+				<p>Takes two or more tag selectors and you chain them together. To select all the anchor tags that are inside of an li:</p>
+				<div class="code-snippet">
+					<p><strong>li a</strong>{ ... ;}</p>
+				</div>
+
+				<p><strong>Adjacent Selector</strong></p>
+				<p>Lets us select elements that come after another element. It lets us select a sibling.</p>
+				<div class="code-snippet">
+					<p><strong>h4 + ul</strong>{ ... ;}</p>
+				</div>
+
+				<p><strong>Attribute Selector</strong></p>
+				<p>A way to select elements based off of any attribute.</p>
+				<div class="code-snippet">
+					<p><strong>a[attribute_you're_looking_for]</strong>{ ... ;}</p>
+				</div>
+
+				<p><strong>nth of type</strong></p>
+				<p>Takes a number (such as 3 or 5) and it selects every nth of a specific element.</p>
+				<div class="code-snippet">
+					<p><strong>ul:nth-of-type(3) </strong>{ ... ;}</p>
+				</div>
+				<p>or</p>
+				<div class="code-snippet">
+					<p><strong>ul:nth-of-type(odd) </strong>{ ... ;}</p>
+				</div>
+
+				<h3>Specificity and the Cascade</h3>
+				<p>Multiple styles can affect the same element, however, the more specific a style is affects its final style. Example: If you specify the color within a body tag to be green, but adjust a paragraph tag to be blue, then the text within the paragraph will be blue instead of green. </p>
+
+				<h3>Fonts</h3>
+				<p>Font styles differ for every machine! Check out Google Fonts to use various styles.</p>
+				<div class="code-snippet">
+					<p style="background: steelblue;"><span style="color: white;">CSS</span></p>
+					<p>p {</p>
+					<p class="single-tab">font-family: "Times New Roman", Times, serif;</p>
+					<p class="single-tab">font-size: 40px;</p>
+					<p>}</p>
+				</div>
+
+				<p>Although px can be used for font-size, em is a better choice. em is relative font size. When using em, it is based off the parent element which can differ across browsers. Therefore, set the body font size to be 16px to avoid unwanted results, and em will be based off of that. </p>
+				<div class="code-snippet">
+					<p>font-size: { 2em ;}</p>
+				</div>
+
+				<p>span is a good way to group text together without making a difference within the code itself. Its a way to single out a line of text and do something to it. </p>
+
+				<h3>Box Model</h3>
+				<p>Every element has a rectangular box around it. These boxes allow us to style them. There are 4 parts of the box: Content, Padding, Border, and Margin. </p>
+
+				<h3>Additional Notes</h3>
+
+				<p><strong>-</strong> use max-width to set a MAX width for a certain element. You can also add a normal width of a certain percentage for when the screen is smaller than the assigned max-width.</p>
+
+				<p><strong>-</strong> margin: 0 auto 0 auto; (will center the element) </p>
+
+				<p><strong>-</strong> To align block elements side by side instead of their default (stacked on their own line), use float.</p>
+
+
+
+			</div>
+			<!-- END OF middle column -->
+			<div class="column side">
+				<h2>Helpful Links</h2>
+				<p><a href="https://www.w3schools.com/howto/default.asp">W3 How To Everything</a></p>
+				<p><a href="https://www.cssfontstack.com/">CSS Font Stack</a></p>
+				<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">MDN on Specificity</a></p>
+				<p><a href="https://specificity.keegan.st/">Specificity Calculator</a></p>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
